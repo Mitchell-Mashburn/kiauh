@@ -85,7 +85,7 @@ klipper_setup(){
   status_msg "Downloading Klipper ..."
   ### force remove existing klipper dir and clone into fresh klipper dir
   [ -d $KLIPPER_DIR ] && rm -rf $KLIPPER_DIR
-  cd ${HOME} && git clone $KLIPPER_REPO
+  cd ${HOME} && git clone https://github.com/Klipper3d/klipper
   status_msg "Download complete!"
 
   ### step 2: install klipper dependencies and create python virtualenv
