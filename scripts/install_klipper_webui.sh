@@ -318,7 +318,7 @@ mainsail_setup(){
   [ -d $MAINSAIL_DIR ] && rm -rf $MAINSAIL_DIR
   mkdir $MAINSAIL_DIR && cd $MAINSAIL_DIR
   status_msg "Downloading Mainsail $MAINSAIL_VERSION ..."
-  wget $MAINSAIL_DL_URL && ok_msg "Download complete!"
+  wget https://github.com/mainsail-crew/mainsail/releases/download/v2.5.0-beta1/mainsail.zip && ok_msg "Download complete!"
 
   ### extract archive
   status_msg "Extracting archive ..."
